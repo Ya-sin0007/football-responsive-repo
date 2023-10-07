@@ -1,109 +1,42 @@
+.container {
+    display: flex;
+    justify-content: center;
+}
+
 body {
-    padding: 0;
-    margin: 0;
+
     font-family: 'Poppins', sans-serif;
 
 }
 
-header {
-    background-color: #2D25A0;
-
-}
-
-.bannar:hover img {
-    transform: scale(1.1);
-    transition: transform 2s;
-}
-
-.header-part:hover h1 {
-    transform: scale(1.1);
-    transition: transform 2s;
-}
-
-nav {
-    display: flex;
-    justify-content: space-between;
-}
-
-
-
-.list-item ul {
-    float: left;
-}
-
-.list-item li {
-    display: inline-block;
-    margin-left: 36px;
-    padding: 0, 10px;
-    margin-top: 42px;
-    ;
-}
-
-.list-item li {
-    list-style: none;
-}
-
-.list-item a {
-    text-decoration: none;
-    color: #fff;
-}
-
-.login {
-    margin-right: 100px;
-    background-color: #E02C6D;
-    padding: 0px 24px;
-    border-radius: 2px;
-    margin-top: 42px;
-}
-
-.login p {
-    font-size: 16px;
-    color: #fff;
-}
-
-.fa-solid {
-    margin-right: 10px;
-}
-
-.container {
-    display: flex;
-    align-items: center;
-
-}
-
-.header-part {
+.players {
     width: 50%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
 }
 
-.header-part {
-
-    margin-left: 100px;
-    color: #fff;
+.player img {
+    width: 330px;
+    overflow: visible;
 
 }
 
-.header-part h1 {
-    width: 485px;
-    font-size: 64px;
+.player {
+    width: 330px;
+    height: 474px;
+    border: 1px solid goldenrod;
+    padding: 16px;
+    overflow: hidden;
 }
 
-.header-part a {
-    text-decoration: none;
-    color: #fff;
-    background-color: #E02C6D;
+.details {
+    color: #6C6C6C;
     font-size: 16px;
-    padding: 10px 15px;
-
 
 }
 
-.bannar {
-    width: 50%;
-
-}
-
-.bannar img {
-    width: 556px;
-    margin-top: 70px;
-    padding-bottom: 80px;
+.player:hover img {
+    transform: scale(1.2);
+    transition: transform 2s;
 }
